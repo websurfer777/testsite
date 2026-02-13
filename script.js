@@ -35,3 +35,8 @@ window.addEventListener('click', function() {
         audio.play();
     }
 }, { once: true });
+
+window.addEventListener('DOMContentLoaded', function() {
+    const audio = document.getElementById('bg-music');
+    audio.volume = 0.2; // Громкость от 0.0 до 1.0 (0.2 = 20%)
+});
