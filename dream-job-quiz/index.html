@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопросник о работе мечты</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bg-music" src="music/background.mp3" autoplay loop></audio>
+    <div class="container">
+        <h1>Вопросник: Твоя работа мечты</h1>
+        <div class="images">
+            <img src="images/dream1.jpg" alt="Работа мечты 1">
+            <img src="images/dream2.jpg" alt="Работа мечты 2">
+        </div>
+        <form id="quiz-form">
+            <label>1. Какая сфера тебе ближе всего?</label><br>
+            <input type="radio" name="field" value="IT"> IT<br>
+            <input type="radio" name="field" value="Медицина"> Медицина<br>
+            <input type="radio" name="field" value="Искусство"> Искусство<br>
+            <input type="radio" name="field" value="Бизнес"> Бизнес<br><br>
+
+            <label>2. Что для тебя важнее на работе?</label><br>
+            <input type="radio" name="priority" value="Деньги"> Деньги<br>
+            <input type="radio" name="priority" value="Творчество"> Творчество<br>
+            <input type="radio" name="priority" value="Стабильность"> Стабильность<br>
+            <input type="radio" name="priority" value="Общение"> Общение<br><br>
+
+            <label>3. Где ты хочешь работать?</label><br>
+            <input type="radio" name="place" value="Офис"> В офисе<br>
+            <input type="radio" name="place" value="Удалённо"> Удалённо<br>
+            <input type="radio" name="place" value="На природе"> На природе<br>
+            <input type="radio" name="place" value="В путешествиях"> В путешествиях<br><br>
+
+            <button type="submit">Узнать результат</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
